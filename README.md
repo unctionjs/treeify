@@ -5,7 +5,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> Array<(any -> IterableType -> IterableType)> -> Array<IterableType> -> IterableType
+> Array<(any -> FunctorType -> FunctorType)> -> Array<FunctorType> -> FunctorType
 
 This takes a list of functions (the folders) and an array of objects or an
 object of objects (the collection) to create a tree. Each function in

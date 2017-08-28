@@ -4,10 +4,10 @@ import mapValues from "@unction/mapvalues"
 import mapValuesWithValueKey from "@unction/mapvalueswithvaluekey"
 import nestedApply from "@unction/nestedapply"
 
-export default function treeify (folders: Array<(any => IterableType => IterableType)>): Function {
+export default function treeify (folders: Array<(any => FunctorType => FunctorType)>): Function {
   const [initial, ...remaining] = folders
 
-  return function treeifyIterators (records: Array<IterableType>): IterableType {
+  return function treeifyIterators (records: Array<FunctorType>): FunctorType {
     return reduceValues(
       thrush
     )(
