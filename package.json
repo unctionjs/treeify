@@ -22,11 +22,11 @@
     "prepublishOnly": "npm run build",
     "prepare": "flow-typed install",
     "test": "NODE_ENV=test tap --100 './test.js'",
-    "build": "babel './source.js' -d './transpiled/'",
-    "lint": "eslint './source.js'",
+    "build": "babel './index.js' -d './transpiled/'",
+    "lint": "eslint './index.js'",
     "check": "flow check",
     "ci": "npm run build && npm run lint && npm run check && npm run test",
-    "watch": "chokidar './source.js' './test.js' --command 'npm run ci --silent'"
+    "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
     "@unction/key": "2.0.0",
@@ -66,5 +66,6 @@
     ],
     "sourceMap": false,
     "instrument": false
-  }
+  },
+  "main": "transpiled/index.js"
 }

@@ -5,12 +5,12 @@ import key from "@unction/key"
 import {indexBy} from "ramda"
 import {groupBy} from "ramda"
 
-import treeify from "./source"
+import treeify from "./"
 
 const collection = [
   {
     id: "a1",
-    type: "resources",
+    type: "res",
     attributes: {
       version: "v1",
       namespace: "accounts",
@@ -18,7 +18,7 @@ const collection = [
   },
   {
     id: "a2",
-    type: "resources",
+    type: "res",
     attributes: {
       version: "v1",
       namespace: "accounts",
@@ -26,7 +26,7 @@ const collection = [
   },
   {
     id: "b1",
-    type: "resources",
+    type: "res",
     attributes: {
       version: "v1",
       namespace: "profiles",
@@ -34,7 +34,7 @@ const collection = [
   },
   {
     id: "b1",
-    type: "resources",
+    type: "res",
     attributes: {
       version: "v2",
       namespace: "profiles",
@@ -50,10 +50,10 @@ test(({same, end}) => {
       ]
     )(collection),
     {
-      resources: [
+      res: [
         {
           id: "a1",
-          type: "resources",
+          type: "res",
           attributes: {
             version: "v1",
             namespace: "accounts",
@@ -61,7 +61,7 @@ test(({same, end}) => {
         },
         {
           id: "a2",
-          type: "resources",
+          type: "res",
           attributes: {
             version: "v1",
             namespace: "accounts",
@@ -69,7 +69,7 @@ test(({same, end}) => {
         },
         {
           id: "b1",
-          type: "resources",
+          type: "res",
           attributes: {
             version: "v1",
             namespace: "profiles",
@@ -77,7 +77,7 @@ test(({same, end}) => {
         },
         {
           id: "b1",
-          type: "resources",
+          type: "res",
           attributes: {
             version: "v2",
             namespace: "profiles",
@@ -99,11 +99,11 @@ test(({same, end}) => {
       ]
     )(collection),
     {
-      resources: {
+      res: {
         accounts: [
           {
             id: "a1",
-            type: "resources",
+            type: "res",
             attributes: {
               version: "v1",
               namespace: "accounts",
@@ -111,7 +111,7 @@ test(({same, end}) => {
           },
           {
             id: "a2",
-            type: "resources",
+            type: "res",
             attributes: {
               version: "v1",
               namespace: "accounts",
@@ -121,7 +121,7 @@ test(({same, end}) => {
         profiles: [
           {
             id: "b1",
-            type: "resources",
+            type: "res",
             attributes: {
               version: "v1",
               namespace: "profiles",
@@ -129,7 +129,7 @@ test(({same, end}) => {
           },
           {
             id: "b1",
-            type: "resources",
+            type: "res",
             attributes: {
               version: "v2",
               namespace: "profiles",
@@ -153,12 +153,12 @@ test(({same, end}) => {
       ]
     )(collection),
     {
-      resources: {
+      res: {
         accounts: {
           v1: [
             {
               id: "a1",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v1",
                 namespace: "accounts",
@@ -166,7 +166,7 @@ test(({same, end}) => {
             },
             {
               id: "a2",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v1",
                 namespace: "accounts",
@@ -178,7 +178,7 @@ test(({same, end}) => {
           v1: [
             {
               id: "b1",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v1",
                 namespace: "profiles",
@@ -188,7 +188,7 @@ test(({same, end}) => {
           v2: [
             {
               id: "b1",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v2",
                 namespace: "profiles",
@@ -214,12 +214,12 @@ test(({same, end}) => {
       ]
     )(collection),
     {
-      resources: {
+      res: {
         accounts: {
           v1: {
             a1: {
               id: "a1",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v1",
                 namespace: "accounts",
@@ -227,7 +227,7 @@ test(({same, end}) => {
             },
             a2: {
               id: "a2",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v1",
                 namespace: "accounts",
@@ -239,7 +239,7 @@ test(({same, end}) => {
           v1: {
             b1: {
               id: "b1",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v1",
                 namespace: "profiles",
@@ -249,7 +249,7 @@ test(({same, end}) => {
           v2: {
             b1: {
               id: "b1",
-              type: "resources",
+              type: "res",
               attributes: {
                 version: "v2",
                 namespace: "profiles",
