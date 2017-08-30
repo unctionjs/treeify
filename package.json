@@ -29,7 +29,7 @@
     "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
-    "@unction/key": "2.0.0",
+    "@unction/key": "3.0.0",
     "@unction/keychain": "2.0.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
