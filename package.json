@@ -14,9 +14,9 @@
     }
   ],
   "license": "ISC",
-  "homepage": "https://github.com/unctionjs/tempLate#readme",
-  "repository": "github:unctionjs/tempLate",
-  "bugs": "https://github.com/unctionjs/tempLate/issues",
+  "homepage": "https://github.com/unctionjs/treeify#readme",
+  "repository": "github:unctionjs/treeify",
+  "bugs": "https://github.com/unctionjs/treeify/issues",
   "main": "transpiled/index.js",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -24,7 +24,7 @@
     "build": "babel './index.js' -d './transpiled/'",
     "lint": "eslint './index.js'",
     "check": "flow-typed install && flow check",
-    "ci": "npm run build && npm run test && npm run lint && npm run check",
+    "ci": "npm run test && npm run lint && npm run check",
     "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
