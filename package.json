@@ -28,8 +28,8 @@
     "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
-    "@unction/key": "4.4.0",
-    "@unction/keychain": "2.5.0",
+    "@unction/key": "4.5.0",
+    "@unction/keychain": "2.6.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
@@ -53,11 +53,11 @@
     "tap": "10.3.4"
   },
   "dependencies": {
-    "@unction/mapvalues": "3.6.0",
-    "@unction/mapvalueswithvaluekey": "2.6.0",
-    "@unction/nestedapply": "4.5.0",
-    "@unction/reducevalues": "2.7.0",
-    "@unction/thrush": "2.4.0"
+    "@unction/mapvalues": "3.7.0",
+    "@unction/mapvalueswithvaluekey": "2.7.0",
+    "@unction/nestedapply": "4.6.0",
+    "@unction/reducevalues": "2.8.0",
+    "@unction/thrush": "2.5.0"
   },
   "nyc": {
     "require": [
