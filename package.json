@@ -53,10 +53,10 @@
     "tap": "10.3.4"
   },
   "dependencies": {
-    "@unction/mapvalues": "3.31.0",
-    "@unction/mapvalueswithvaluekey": "2.31.0",
-    "@unction/nestedapply": "4.30.0",
-    "@unction/reducevalues": "2.32.0",
+    "@unction/mapvalues": "3.32.0",
+    "@unction/mapvalueswithvaluekey": "2.32.0",
+    "@unction/nestedapply": "4.31.0",
+    "@unction/reducevalues": "2.33.0",
     "@unction/thrush": "2.5.0"
   },
   "nyc": {
