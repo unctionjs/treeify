@@ -53,7 +53,7 @@
     "tap": "10.3.4"
   },
   "dependencies": {
-    "@unction/mapvalues": "3.44.0",
+    "@unction/mapvalues": "3.45.0",
     "@unction/mapvalueswithvaluekey": "2.44.0",
     "@unction/nestedapply": "4.52.0",
     "@unction/reducevalues": "2.43.0",
