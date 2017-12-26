@@ -56,10 +56,10 @@
   },
   "dependencies": {
     "@unction/mapvalues": "4.0.0",
-    "@unction/mapvalueswithvaluekey": "3.0.0",
-    "@unction/nestedapply": "4.57.0",
-    "@unction/reducevalues": "2.44.0",
-    "@unction/thrush": "2.8.0"
+    "@unction/mapvalueswithvaluekey": "4.0.0",
+    "@unction/nestedapply": "5.0.0",
+    "@unction/reducevalues": "3.0.0",
+    "@unction/thrush": "3.0.0"
   },
   "nyc": {
     "require": [
