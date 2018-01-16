@@ -5,7 +5,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> Array<(any => FunctorType => FunctorType)> => Array<FunctorType> => FunctorType
+> Array<ReducerFunctionType> => Array<FunctorType> => TreeType
 
 This takes a list of functions (the folders) and an array of objects or an
 object of objects (the collection) to create a tree. Each function in
@@ -54,14 +54,18 @@ level properties will be based on `key("type")`, and the deepest layer
 properties will be based on `key("id")`.
 
 ``` javascript
-const functions = [
-  groupBy(key("type")),
-  groupBy(keyChain(["attributes", "namespace"])),
-  groupBy(keyChain(["attributes", "version"])),
-  indexBy(key("id")),
-]
+const functions =
 
-treeify(functions)(collection)
+treeify(
+  [
+    groupBy(key("type")),
+    groupBy(keyChain(["attributes", "namespace"])),
+    groupBy(keyChain(["attributes", "version"])),
+    indexBy(key("id")),
+  ]
+)(
+  collection
+)
 ```
 
 The resulting object looks like this:
