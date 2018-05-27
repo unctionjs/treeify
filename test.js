@@ -1,4 +1,4 @@
-/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
+/* eslint-disable flowtype/require-return-type */
 import {test} from "tap"
 import keyChain from "@unction/keychain"
 import key from "@unction/key"
