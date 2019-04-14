@@ -1,11 +1,11 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
-import keyChain from "@unction/keychain"
-import key from "@unction/key"
-import {indexBy} from "ramda"
-import {groupBy} from "ramda"
+import {test} from "tap";
+import keyChain from "@unction/keychain";
+import key from "@unction/key";
+import {indexBy} from "ramda";
+import {groupBy} from "ramda";
 
-import treeify from "./index"
+import treeify from "./index";
 
 const collection = [
   {
@@ -40,7 +40,7 @@ const collection = [
       namespace: "profiles",
     },
   },
-]
+];
 
 test(({same, end}) => {
   same(
@@ -85,10 +85,10 @@ test(({same, end}) => {
         },
       ],
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
@@ -138,10 +138,10 @@ test(({same, end}) => {
         ],
       },
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
@@ -198,10 +198,10 @@ test(({same, end}) => {
         },
       },
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
@@ -259,7 +259,7 @@ test(({same, end}) => {
         },
       },
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
