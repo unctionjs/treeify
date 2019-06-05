@@ -56,7 +56,7 @@
   "dependencies": {
     "@unction/mapvalues": "10.1.0",
     "@unction/mapvalueswithvaluekey": "10.1.0",
-    "@unction/nestedapply": "12.0.1",
+    "@unction/nestedapply": "12.1.0",
     "@unction/reducevalues": "8.1.0",
     "@unction/thrush": "4.0.0"
   },
