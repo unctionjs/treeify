@@ -54,11 +54,11 @@
     "tap": "12.6.1"
   },
   "dependencies": {
-    "@unction/mapvalues": "10.2.0",
-    "@unction/mapvalueswithvaluekey": "10.2.0",
-    "@unction/nestedapply": "12.2.0",
-    "@unction/reducevalues": "8.2.0",
-    "@unction/thrush": "4.1.0",
+    "@unction/mapvalues": "10.3.0",
+    "@unction/mapvalueswithvaluekey": "10.3.0",
+    "@unction/nestedapply": "12.3.0",
+    "@unction/reducevalues": "8.3.0",
+    "@unction/thrush": "4.1.1",
     "core-js": "3.0.1"
   },
   "nyc": {
