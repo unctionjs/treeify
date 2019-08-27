@@ -1,11 +1,11 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 import keyChain from "@unction/keychain";
 import key from "@unction/key";
 import {indexBy} from "ramda";
 import {groupBy} from "ramda";
 
-import treeify from "./index";
+import treeify from "./";
 
 const collection = [
   {
