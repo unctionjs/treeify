@@ -3,11 +3,25 @@ import reduceValues from "@unction/reducevalues";
 import mapValues from "@unction/mapvalues";
 import mapValuesWithValueKey from "@unction/mapvalueswithvaluekey";
 import nestedApply from "@unction/nestedapply";
-export default function treeify (folders) {
-  const [initial, ...remaining] = folders;
+
+import {FoldFunctionType} from "./types";
+import {TreeType} from "./types";
+
+export default function treeify<A, B, C> (foldingFunctions: Array<FoldFunctionType<A, B>>) {
+  const [initial, ...remaining] = foldingFunctions;
 
 
-  return function treeifyIterators (records) {
-    return reduceValues(thrush)(initial(records))(mapValuesWithValueKey(nestedApply(mapValues))(remaining));
+  return function treeifyIterators (array: Array<A>): TreeType<C> {
+    return reduceValues(
+      thrush
+    )(
+      initial(array)
+    )(
+      mapValuesWithValueKey(
+        nestedApply(mapValues)
+      )(
+        remaining
+      )
+    );
   };
 }

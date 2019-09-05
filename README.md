@@ -1,11 +1,10 @@
 # @unction/treeify
 
-
 ![Tests][BADGE_TRAVIS]
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> Array<ReducerFunctionType> => Array<FunctorType> => TreeType
+> Array<FoldFunctionType<A, B>> => Array<A> => TreeType<C>
 
 This takes a list of functions (the folders) and an array of objects or an
 object of objects (the collection) to create a tree. Each function in
@@ -120,6 +119,5 @@ The resulting object looks like this:
 ```
 
 [BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/treeify.svg?maxAge=2592000&style=flat-square
-
 [BADGE_STABILITY]: https://img.shields.io/badge/stability-strong-green.svg?maxAge=2592000&style=flat-square
 [BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/treeify.svg?maxAge=2592000&style=flat-square
