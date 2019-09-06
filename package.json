@@ -58,8 +58,8 @@
   "dependencies": {
     "@unction/mapvalues": "10.6.0",
     "@unction/mapvalueswithvaluekey": "10.6.0",
-    "@unction/nestedapply": "12.6.0",
-    "@unction/reducevalues": "8.6.0",
+    "@unction/nestedapply": "12.7.0",
+    "@unction/reducevalues": "8.7.0",
     "@unction/thrush": "4.2.1"
   },
   "files": [
