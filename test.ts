@@ -41,7 +41,7 @@ const collection = [
   },
 ];
 
-test(() => {
+test("works", () => {
   expect(treeify(
     [
       groupBy(key("type")),
@@ -84,7 +84,7 @@ test(() => {
   });
 });
 
-test(() => {
+test("works", () => {
   expect(treeify(
     [
       groupBy(key("type")),
@@ -132,7 +132,7 @@ test(() => {
   });
 });
 
-test(() => {
+test("works", () => {
   expect(treeify(
     [
       groupBy(key("type")),
@@ -187,7 +187,7 @@ test(() => {
   });
 });
 
-test(() => {
+test("works", () => {
   expect(treeify(
     [
       groupBy(key("type")),
