@@ -4,7 +4,7 @@ import key from "@unction/key";
 import {indexBy} from "ramda";
 import {groupBy} from "ramda";
 
-import treeify from "./index.ts";
+import treeify from "./index";
 
 const collection = [
   {
