@@ -56,10 +56,10 @@
     "typescript": "3.5.1"
   },
   "dependencies": {
-    "@unction/mapvalues": "10.8.0",
-    "@unction/mapvalueswithvaluekey": "10.8.0",
-    "@unction/nestedapply": "12.8.0",
-    "@unction/reducevalues": "8.8.0",
+    "@unction/mapvalues": "10.9.0",
+    "@unction/mapvalueswithvaluekey": "10.9.0",
+    "@unction/nestedapply": "12.9.0",
+    "@unction/reducevalues": "8.9.0",
     "@unction/thrush": "4.2.2"
   },
   "files": [
