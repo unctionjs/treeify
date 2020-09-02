@@ -67,10 +67,10 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "@unction/mapvalues": "10.10.0",
-    "@unction/mapvalueswithvaluekey": "10.10.0",
-    "@unction/nestedapply": "12.10.0",
-    "@unction/reducevalues": "8.10.0",
-    "@unction/thrush": "4.2.3"
+    "@unction/mapvalues": "^10.11.0",
+    "@unction/mapvalueswithvaluekey": "^10.11.0",
+    "@unction/nestedapply": "^12.11.0",
+    "@unction/reducevalues": "^8.11.0",
+    "@unction/thrush": "^4.2.4"
   }
 }
