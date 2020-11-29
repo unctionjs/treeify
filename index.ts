@@ -10,7 +10,6 @@ import {TreeType} from "./types";
 export default function treeify<A, B, C> (foldingFunctions: Array<FoldFunctionType<A, B>>) {
   const [initial, ...remaining] = foldingFunctions;
 
-
   return function treeifyIterators (array: Array<A>): TreeType<C> {
     return reduceValues(
       thrush
